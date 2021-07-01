@@ -9,6 +9,10 @@ explore: ecommerce_customer_segmentation {
 
   extends: [bqml_k_means]
 
+  join: input_data {
+    from: input_data_ecommerce_customer_segmentation
+  }
+
   join: k_means_predict {
     type: full_outer
     relationship: one_to_one

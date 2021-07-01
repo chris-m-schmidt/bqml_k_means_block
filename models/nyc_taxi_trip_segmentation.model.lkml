@@ -9,6 +9,10 @@ explore: nyc_taxi_trip_segmentation {
 
   extends: [bqml_k_means]
 
+  join: input_data {
+    from: input_data_nyc_taxi_trip_segmentation
+  }
+
   join: k_means_predict {
     type: full_outer
     relationship: one_to_one
