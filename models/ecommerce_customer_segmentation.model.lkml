@@ -6,7 +6,7 @@ include: "/use_case_refinements/ecommerce_customer_segmentation/*"
 explore: ecommerce_customer_segmentation {
   label: "BQML K-Means: eCommerce Customer Segmentation"
   description: "Use this Explore to create BQML K-means Clustering models for customer segmentation analysis using Looker's eCommerce dataset"
-
+  hidden: yes
   extends: [bqml_k_means]
 
   join: k_means_predict {
